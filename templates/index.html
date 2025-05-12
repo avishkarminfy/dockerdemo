@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Interactive Docker App</title>
+</head>
+<body>
+    <h1>Welcome to Avishkar's Docker App!</h1>
+    <form method="post">
+        <label>Enter your name:</label>
+        <input type="text" name="name" required>
+        <button type="submit">Greet Me</button>
+    </form>
+
+    {% if name %}
+        <h2>Hello, {{ name }}! 👋</h2>
+    {% endif %}
+</body>
+</html>
